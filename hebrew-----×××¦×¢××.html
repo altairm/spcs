@@ -1,0 +1,640 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="Generator" content="Ademama cms - Copyright (C) 2008 - 2009. All rights reserved. http://www.ademama.com" />
+
+<link href="templates/inner_page/inner_page.css" rel="stylesheet" type="text/css" />
+
+
+<link rel="stylesheet" href="addOn/catalogBlog/css/image-slideshow.css" type="text/css" />
+<link rel="stylesheet" href="addOn/photoshow/css/sexyslider.css" />
+
+<link href="site/favicon.ico" rel="icon" type="image/x-icon" />
+
+<!-- jquery -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!-- colorbox pop up window -->
+<link rel="stylesheet" href="cpan/include/colorbox/colorbox.css" type="text/css" />
+<script type="text/javascript" src="cpan/include/colorbox/jquery.colorbox.js"> </script>
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+		$(document).ready(function(){
+			//Examples of how to assign the ColorBox event to elements
+			$(".catablogImages").colorbox({rel:'catablogImages'});
+			$(".tellFriend").colorbox({iframe:true, width:520, height:360});
+			$(".group2").colorbox({rel:'group2', transition:"fade"});
+			$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+			$(".group4").colorbox({rel:'group4', slideshow:true});
+			$(".ajax").colorbox();
+			$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+			$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+			$(".inline").colorbox({inline:true, width:"50%"});
+			$(".callbacks").colorbox({
+				onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+				onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+				onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+				onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+				onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+			});
+			
+			//Example of preserving a JavaScript event for inline calls.
+			$("#click").click(function(){ 
+				$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+				return false;
+			});
+		});
+
+//-->
+</script>
+<!-- End colorbox pop up window -->
+
+<script type="text/javascript" src="modules/sideMenu/ddaccordion.js"></script>
+<script type="text/javascript" src="addOn/photoshow/javascript/jquery.sexyslider.min.js"></script>
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+
+<!-- start Image Bubbles effect -->
+<link href="cpan/include/imgbubbles.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+/*CSS for Image Bubbles effect (for attention module) */
+#attention_small li{ height: 16px; width: 17px; }
+#attention_med li{ height: 28px; width: 21px; }
+#attention_big li{ height: 37px; width: 28px; }
+</style>
+
+<script type="text/javascript" src="cpan/include/imgbubbles.js">
+/***********************************************
+* Image Bubbles effect- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+</script>
+
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	// for attention module
+	$('ul#attention_small').imgbubbles({factor:1.4}) //add bubbles effect to UL id="attention_small"
+	$('ul#attention_med').imgbubbles({factor:1.3}) //add bubbles effect to UL id="attention_med"
+	$('ul#attention_big').imgbubbles({factor:1.2}) //add bubbles effect to UL id="attention_big"
+})
+</script>
+<!-- end Image Bubbles effect -->
+
+<meta name="google-site-verification" content="n66hQ9BacgquhmC2QS2dBCwMguWKwz5xq5FOX48VyBU" />
+<link rel="stylesheet" href="include/extraCSS/bright.css" type="text/css" media="screen" />
+
+
+<script type="text/javascript">
+/**
+ * jQuery.browser.mobile (http://detectmobilebrowser.com/)
+ * jQuery.browser.mobile will be true if the browser is a mobile device
+ *
+ **/
+(function(a){jQuery.browser.mobile=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))})(navigator.userAgent||navigator.vendor||window.opera);
+
+</script>
+
+</head>
+<body >
+
+<div id="container_box">
+  <div id="external_box">
+    
+	<!-- begin the body -->
+	
+	<!-- Header -->
+	<div id="external_header_box">
+	  <div class="internal_box">
+	    
+		<!-- header 3 columns table -->
+		<table border="0" cellpadding="0" cellspacing="0" id="header">
+		  <tr>
+			<td class="width_space_15"><!-- width space 15 --></td>
+			<td valign="top" dir="rtl">
+				
+				<!-- height space 21 -->
+				<div class="height_space_21"></div>
+				
+				<!-- Position_1 and Position_2 -->
+				<div style="float:right; ">
+					
+										
+				</div>
+				<div style="float:left; ">
+					
+										
+				</div>
+				<div style="clear:both;"></div>
+				<!-- End Position_1 and Position_2 -->
+				
+				
+				<!-- header pozition -->
+				
+
+
+
+
+<div style="width: 807px; margin-bottom: -30px;">
+<div style="width: 580px; float: right;">
+<table border="0">
+<tbody>
+<tr>
+<td>
+<div style="height: 35px; padding-top: 8px;">
+<div style="width: 22px; height: 22px; float: right;"><img src="/site/images/phoneIcon22x22.png" alt="" width="22" height="22" /></div>
+<div style="width: 300px; height: 25px; padding-top: 5px; padding-right: 10px; float: right; font-size: 14px; font-weight: bold; color: #2650b5;">שירותי טלמיטינג  03-932-10-10</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div style="float: right;">
+
+
+<!-- Start Menu topMenu addOn -->
+	<div class="topMenu" style="background-color: transparent;background-image: url(empty);background-repeat: repeat;background-position: left 0px;float:left; width:576px; margin-top:0px; margin-left:0px; margin-right:0px;">
+		<ul>
+			<li id="nothing" style="text-align: left;float:left;"><a href="/hebrew-----contact_us.html" title="יצירת קשר" alt="יצירת קשר">יצירת קשר</a></li>
+		</ul>
+		<ul>
+			<li id="nothing" style="text-align: left;float:left;"><a href="/hebrew-----מאמרים.html" title="מאמרים" alt="מאמרים">מאמרים</a></li>
+		</ul>
+		<ul>
+			<li id="nothing" style="text-align: left;float:left;"><a href="/hebrew-----שירותים.html" title="שירותים" alt="שירותים">שירותים</a></li>
+		</ul>
+		<ul>
+			<li id="nothing" style="text-align: left;float:left;"><a href="/hebrew-----טלמיטינג.html" title="טלמיטינג" alt="טלמיטינג">טלמיטינג</a></li>
+		</ul>
+		<ul>
+			<li id="nothing" style="text-align: left;float:left;"><a href="/hebrew-----אודות_SPCS.html" title="אודות " alt="אודות ">אודות </a></li>
+		</ul>
+		<ul>
+			<li id="nothing" style="text-align: left;float:left;"><a href="/" title="דף הבית" alt="דף הבית">דף הבית</a></li>
+		</ul>
+	</div>
+	<div style="clear:both;"></div>
+
+<!-- End  Menu topMenu addOn -->
+
+
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="width: 224px; float: left;">
+<table border="0">
+<tbody>
+<tr>
+<td>
+<div style="width: 284px; padding-right: 35px; margin-bottom: 0px; margin-right: -25px;"><img src="/site/images/SPCSLogoPNGfinal.png" alt="" width="225" height="87" /></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>				<!-- header pozition -->
+				
+			</td>
+			<td class="width_space_18"><!-- width space 18 --></td>
+		  </tr>
+		</table>
+		<!-- End header 3 columns table -->
+		
+	  </div>
+	</div>
+	<!-- End Header -->
+	
+	
+	
+	
+	<!-- Midle -->
+		<div id="external_body_box">
+			<div class="internal_box">
+				
+				<!-- Columns table  -->
+				<table border="0" cellpadding="0" cellspacing="0" class="internal_box">
+					<tr>
+						
+								<!-- leftSide 6  -->
+								<td valign="top" id="leftSide">
+									
+									<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+									  <tr>
+										<td class="height_space_11"></td>
+										<td></td>
+										<td></td>
+									  </tr>
+									  <tr>
+										<td class="width_space_15"><!-- width space 15 --></td>
+										<td valign="top" dir="rtl">
+										
+											
+											
+											<div style="width: 224px; float: left; margin-top: -9px;"><!--form 11111111111111111111111111111111111111111111111111111--> 
+<table border="0">
+<tbody>
+<tr>
+<td>
+<div style="background: url(/site/images/formBG224x234_1.png); background-position: right top; background-repeat: no-repeat; width: 211px; height: 234px; padding-top: 13px; padding-right: 10px;">
+<div style="width: 200px; padding-right: 13px;"><span style="font-size: 14px; font-weight: bold;">צור קשר </span><span style="font-size: 12px; font-weight: normal;"> השאר פרטים ונחזור אליך.</span></div>
+<div style="width: 206px;">
+
+<!-- start form addOn -->
+
+	
+	<script type="text/javascript">
+	
+	function validate()
+	{
+
+		if (ValidBotBoot()==false) {
+		alert("תוצאת שאלת האימות שהזנת (נגד ספאם) אינה נכונה");
+		return false;
+		}
+
+	document.form1.submit()
+	return true;
+	}
+	
+	var a = Math.ceil(Math.random() * 10);
+	var b = Math.ceil(Math.random() * 10);       
+	var c = a + b
+	function DrawBotBoot()
+	{
+		document.write(a + " + " + b);
+		document.write(" <input  style='font-size: x-small; width: 20px;'  id='BotBootInput' type='text' maxlength='2' size='2'/>");
+	}    
+	function ValidBotBoot(){
+		var d = document.getElementById('BotBootInput').value;
+		if (d == c) return true;        
+		return false;
+		
+	}
+	</script>
+	
+	<form name="form1" method="post" action="mail.php">
+
+<input name="receipting_email" type="hidden" value="MichaelkruchitStringToReplacespcs.co.il" />
+<input name="emailSubject" type="hidden" value="טופס מהאתר" />
+<input name="thanks_url" type="hidden" value="http://spcs.co.il/-----thanks.html" />
+<table width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td valign="bottom">
+<strong> * </strong>שם: 
+					<input style="
+width: 142px;
+height: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: transparent;
+	background-image: url();
+	background-repeat: repeat;
+	background-position: left 0px;
+	padding: 2px;
+	font-size: 12px;
+	border: 1px solid #000000;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	float: left;
+	" name="userName" type="text" size="" value="" />
+					<input name="userName_requireMessage" type="hidden" value="שדה השם הינו שדה חובה" /></td>
+
+
+<tr>
+<td valign="bottom">
+<input name="identification_Email" type="hidden" value="Email" />
+<strong></strong>Email:  
+<input style="
+width: 142px;
+height: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: transparent;
+	background-image: url();
+	background-repeat: repeat;
+	background-position: left 0px;
+	padding: 2px;
+	font-size: 12px;
+	border: 1px solid #000000;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	float: left;
+	" name="Email" type="text" size="" />
+<input name="require_Email" type="hidden" value="" />
+<input name="requireMessage_Email" type="hidden" value="" />
+
+ <!-- ======================== --> 
+
+</td>
+
+
+<tr>
+<td valign="bottom">
+<input name="identification_טלפון" type="hidden" value="טלפון" />
+<strong></strong>טלפון:  
+<input style="
+width: 142px;
+height: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: transparent;
+	background-image: url();
+	background-repeat: repeat;
+	background-position: left 0px;
+	padding: 2px;
+	font-size: 12px;
+	border: 1px solid #000000;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	float: left;
+	" name="טלפון" type="text" size="" />
+<input name="require_טלפון" type="hidden" value="" />
+<input name="requireMessage_טלפון" type="hidden" value="" />
+
+ <!-- ======================== --> 
+
+</td>
+
+
+<tr>
+<td valign="bottom">
+<input name="identification_הודעה" type="hidden" value="הודעה" />
+<strong></strong>הודעה:  
+<textarea style="
+width: 142px;
+height: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: transparent;
+	background-image: url();
+	background-repeat: repeat;
+	background-position: left 0px;
+	padding: 2px;
+	font-size: 12px;
+	border: 1px solid #000000;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	float: left;
+	" name="הודעה" cols="" rows="3"></textarea>
+<input name="require_הודעה" type="hidden" value="" />
+<input name="requireMessage_הודעה" type="hidden" value="" />
+
+ <!-- ======================== --> 
+
+</td>
+
+
+<tr>
+<td valign="bottom">
+<input style="
+width: 80px;
+height: 26px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background-color: #F14811;
+	background-image: url();
+	background-repeat: repeat;
+	background-position: left 0px;
+	
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid transparent;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	cursor:pointer;
+	
+	margin-top: 5px;
+	float: left;
+	
+	" type="submit" name="submitForm" id="submitForm" value="שליחה" 
+	onMouseOver="this.style.backgroundColor='#B32910'; this.style.backgroundImage='url()'" onMouseOut="this.style.backgroundColor='#F14811'; this.style.backgroundImage='url()'"
+	/>
+
+</td>
+</tr>
+</table>
+</form>
+
+<!-- End form addOn -->
+
+
+
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<div style="width: 221px; height: 232px; background-image: url(/site/images/sale1.png); background-repeat: no-repeat; margin-top: 1px;"><a href="/hebrew-----%D7%9E%D7%91%D7%A6%D7%A2%D7%99%D7%9D.html"> <img style="margin-top: 168px; margin-right: 16px;" onmouseover="this.src='http://spcs.co.il/site/images/enterNowMO189x47.png';" onmouseout="this.src='http://spcs.co.il/site/images/enterNow189x47.png';" src="/site/images/enterNow189x47.png" alt="" width="189" height="47" /></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<br /><!--text 2222222222222222222222222222222222222222222222222222222--></div>										
+										</td>
+										<td class="width_space_16"><!-- width space 16 --></td>
+									  </tr>
+									</table>
+									
+								</td>
+								<!-- End leftSide 6  -->
+						
+								<td valign="top" >
+									<!-- midle horizontal column -->
+									
+											<!-- Sub Header -->
+											<table border="0" cellpadding="0" cellspacing="0" style="width:100%; border:0px; ">
+											  <tr>
+												<td class="height_space_12"><!-- height_space_12 --></td>
+											  </tr>
+											  <tr>
+												<td valign="top" id="subHeader" dir="rtl">
+												
+													
+											
+													<!-- subHeader -->
+													<div style="width: 580px; float: right; margin-top: -4px;">
+<div style="width: 580px; height: 115px; margin-right: 5px;"><img src="/site/images/general/subheader_f2_580x115.png" alt="" width="580" height="115" /></div>
+</div>													<!-- End subHeader -->
+												
+												</td>
+											  </tr>
+											  <tr>
+												<td class="height_space_14"><!-- height_space_14 --></td>
+											  </tr>
+											  <tr>
+												<td height="200" valign="top" id="mainTable" dir="rtl">
+													
+													
+												
+													<!-- Main Contents -->
+													
+
+
+<!-- Start print the page -->
+<h1>מבצעי החודש</h1>
+
+<p style="text-align: center;"><img src="/site/images/general/sale pic/sale2014.jpg" alt="" width="418" height="236" /></p>
+<iframe src="http://free.timeanddate.com/countdown/i3wsj1s7/n110/cf11/cm0/cu4/ct0/cs0/ca0/co1/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw320/szh135/tat%D7%99%D7%9E%D7%99%D7%9D%20%D7%A0%D7%95%D7%AA%D7%A8%D7%99%D7%9D%20%D7%9C%D7%9E%D7%91%D7%A6%D7%A2/tac000/tptTime%20since%20Event%20started%20in/tpc000/iso2014-02-01T00:00:00" width="264" height="40" frameborder="0"></iframe>
+<!-- End print the page -->
+
+
+													<!-- End Main Contents -->
+													
+												</td>
+											  </tr>
+											  <tr>
+												<td class="height_space_19"><!-- height_space_19 --></td>
+											  </tr>
+											  <tr>
+												<td valign="top" id="subFooter" dir="rtl">
+												
+												
+												
+													
+													
+												<!-- subFooter -->
+																								<!-- End subFooter -->
+												
+												</td>
+											  </tr>
+								  </table>
+											<!-- End Sub Header -->
+										
+									<!-- End midle horizontal column -->
+							
+								</td>
+						
+						
+								
+								<!-- rightSide 8  -->
+								<td valign="top" id="rightSide">
+									
+									<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+									  <tr>
+										<td class="height_space_13"></td>
+										<td></td>
+										<td></td>
+									  </tr>
+									  <tr>
+										<td class="width_space_17"><!-- width space 17 --></td>
+										<td valign="top" dir="rtl">
+										
+										
+													
+										<!-- right -->
+																				<!-- End right -->
+										
+										</td>
+										<td class="width_space_18"><!-- width space 18 --></td>
+									  </tr>
+									</table>
+									
+								</td>
+								<!-- End rightSide 8  -->
+						
+										
+					</tr>
+					  
+					<tr>
+						<td class="height_space_20"><!-- height_space_20 --></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				
+				<!-- End Columns table  -->
+				
+			</div>
+		</div>
+		<!-- End Midle -->
+		
+		
+		
+		
+		<!-- Footer -->
+		<div id="external_footer_box">
+	  	<div class="internal_box">
+	    
+		<table border="0" cellpadding="0" cellspacing="0" id="footer">
+			  <tr>
+				
+				<td class="width_space_15"><!-- width space 15 --></td>
+				<td valign="top" dir="rtl">
+				
+				
+													
+				<!-- Footer -->
+				<!--pics 11111111111111111111111111111111111111111111111111111111111111-->
+<div style="width: 787px; margin-right: 6px; margin-top: 20px; margin-bottom: 20px; background-color: #b3b3b3; border-radius: 7px; padding: 4px 5px 4px 5px;">
+<table border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="padding-left: 5px;"><img style="border-radius: 4px;" src="/site/.jpg" alt="" width="94" height="63" /></td>
+<td style="padding-left: 5px;"><img style="border-radius: 4px;" src="/site/images/TeamNetcom1.jpg" alt="" width="94" height="63" /></td>
+<td style="padding-left: 5px;"><img style="border-radius: 4px;" src="/site/images/Untitled1_0002_kidron.jpg.jpg" alt="" width="94" height="63" /></td>
+<td style="padding-left: 5px;"><img style="border-radius: 4px;" src="/site/images/Untitled1_0003_logocdlogo.jpg.jpg" alt="" width="94" height="63" /></td>
+<td style="padding-left: 5px;"><img style="border-radius: 4px;" src="/site/images/Untitled1_0004_logoelifim.jpg.jpg" alt="" width="94" height="63" /></td>
+<td style="padding-left: 5px;"><img style="border-radius: 4px;" src="/site/images/Untitled1_0005_logoepoha.jpg.jpg" alt="" width="94" height="63" /></td>
+<td style="padding-left: 5px;"><img style="border-radius: 4px;" src="/site/images/Untitled1_0006_logorebate.jpg.jpg" alt="" width="94" height="63" /></td>
+<td style="padding-left: 5px;"><img style="border-radius: 4px;" src="/site/images/Untitled1_0007_logorimax.jpg.jpg" alt="" width="94" height="63" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--menu bottom AND icons links 222222222222222222222222222222222222222222222222-->
+<div style="clear: both;">&nbsp;</div>
+<!--menu bottom-->
+<div style="margin: 0 auto;">
+
+
+<!-- Start Menu bottomMenu addOn -->
+	[ <a href="/hebrew-----יצירת_קשר.html" title="יצירת קשר" alt="יצירת קשר" class="bottomMenu">יצירת קשר</a> |
+	<a href="/hebrew-----מאמרים.html" title="מאמרים" alt="מאמרים" class="bottomMenu">מאמרים</a> |
+	<a href="/hebrew-----שירותים.html" title="שירותים" alt="שירותים" class="bottomMenu">שירותים</a> |
+	<a href="/hebrew-----טלמיטינג.html" title="טלמיטינג" alt="טלמיטינג" class="bottomMenu">טלמיטינג</a> |
+	<a href="/hebrew-----אודות_SPCS.html" title="אודות SPCS" alt="אודות SPCS" class="bottomMenu">אודות SPCS</a> |
+	<a href="/" title="דף הבית" alt="דף הבית" class="bottomMenu">דף הבית</a> ]
+	<div style="clear:both;"></div>
+
+<!-- End  Menu bottomMenu addOn -->
+
+
+</div>				<!-- End Footer -->
+				
+				</td>
+				<td class="width_space_18"><!-- width space 18 --></td>
+				
+			  </tr>
+		  </table>
+		
+	  </div>
+	</div>
+	<!-- End Header -->
+	
+	
+	
+	<!-- End the body -->
+	
+  </div>
+</div>
+
+
+
+<!-- End of the page -->
+</body>
+</html>

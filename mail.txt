@@ -1,0 +1,24 @@
+Array
+(
+    [receipting_email] => MichaelkruchitStringToReplacespcs.co.il
+    [emailSubject] => טופס מהאתר
+    [thanks_url] => http://spcs.co.il/-----thanks.html
+    [userName] => שגשדג
+    [userName_requireMessage] => שדה השם הינו שדה חובה
+    [identification_Email] => Email
+    [Email] => asdad@smasdk.asd
+    [require_Email] => 
+    [requireMessage_Email] => 
+    [identification_טלפון] => טלפון
+    [טלפון] => 123019891
+    [require_טלפון] => 
+    [requireMessage_טלפון] => 
+    [identification_הודעה] => הודעה
+    [הודעה] => фвыло
+askldjakldsj
+фывлыфвз
+ךלשחדגפםגח שםפחג ד
+    [require_הודעה] => 
+    [requireMessage_הודעה] => 
+    [submitForm] => שליחה
+)

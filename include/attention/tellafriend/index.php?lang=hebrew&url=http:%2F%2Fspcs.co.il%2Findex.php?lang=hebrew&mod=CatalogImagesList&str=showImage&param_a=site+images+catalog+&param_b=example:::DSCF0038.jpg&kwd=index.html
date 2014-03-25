@@ -1,0 +1,194 @@
+<html> 
+<head>
+<title>ספר לחברים, <small>שלח/י את כתובת דף האינטרנט הזה לחברים</small></title>
+<script language="javascript">
+<!--
+
+function reset() {
+document.tellafriend.name.value="";
+document.tellafriend.email.value="";
+document.tellafriend.friendmail1.value="";
+document.tellafriend.friendmail2.value="";
+document.tellafriend.friendmail3.value="";
+}
+
+function validate() {
+
+
+if (ValidBotBoot()==false) {
+alert("תוצאת שאלת האימות שהזנת (נגד ספאם) אינה נכונה");
+return false;
+}
+
+if (document.tellafriend.friendmail1.value.length==0) {
+alert("אנא הזן לפחות כתובת אימייל של חבר אחד");
+return false;
+}
+
+if (document.tellafriend.email.value.length==0) {
+alert("אנא הזן את כתובת האימייל שלך");
+return false;
+}
+
+   var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+   if(reg.test(document.tellafriend.email.value) == false) {
+ 
+      alert('אנא הזן את כתובת האימייל התקנית שלך');
+      return false;
+   }
+   if(reg.test(document.tellafriend.friendmail1.value) == false) {
+ 
+      alert('אנא הזן את כתובת האימייל התקנית של החברים שלך');
+      return false;
+   }
+   
+if (document.tellafriend.name.value.length==0) {
+alert("אנא הזן את שמך");
+return false;
+}
+
+document.tellafriend.submit()
+return true;
+}
+
+//-->
+</script>
+
+    <script type="text/javascript">
+    var a = Math.ceil(Math.random() * 10);
+    var b = Math.ceil(Math.random() * 10);       
+    var c = a + b
+    function DrawBotBoot()
+    {
+        document.write(a + " + " + b);
+        document.write(" <input id='BotBootInput' type='text' maxlength='2' size='2'/>");
+    }    
+    function ValidBotBoot(){
+        var d = document.getElementById('BotBootInput').value;
+        if (d == c) return true;        
+        return false;
+        
+    }
+    </script>
+
+
+
+    <style type="text/css">
+<!--
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8px;
+}
+input {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 22px;
+	background-color: #FFFF99;
+	padding: 4px;
+	font-size: 12px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	color: #660000;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #CCCCCC;
+}
+.button {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 22px;
+	background-color: #660000;
+	font-size: 12px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	color: #FFFF66;
+	font-weight: bold;
+	border: 1px solid #000000;
+	padding: 0px 4px 4px;
+}
+.button:hover {
+	background-color: #000;
+	cursor: pointer;
+}
+body,td,th {
+	font-size: 14px;
+	color: #835241;
+}
+
+-->
+    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body onload="reset()" topmargin="0" leftmargin="0"> 
+
+<table width="450" cellpadding="0" cellspacing="0" align="center" dir="rtl"> 
+<tr valign="top"> 
+<td valign="middle" align="center"> 
+<p><strong><font color="#999999" size="-1" face="Arial">מלאו את הטופס בכדי לשלוח ולספר על דף זה לחברים</font></strong></p> 
+<form name="tellafriend" action="tellafriend.php?lang=hebrew" method="post" onsubmit="return checkfields()"> 
+<input name="currentUrl" type="hidden" value="http://spcs.co.il/index.php?lang=hebrew">
+
+<table border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td colspan="2"> <font face="Arial">* שמך:</font></td>
+<td>
+<font face="Arial">
+<input size="30" name="name" maxlength="45"> </font>
+</td>
+</tr>
+<tr>
+<td colspan="2"><font face="Arial">* האימייל שלך:</font></td>
+<td>
+<font face="Arial">
+<input size="30" name="email" maxlength="45"> </font>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p align="center"><font color="#999999"><strong><font size="-1" face="Arial">אנא הכנס את כתובות האימייל של החברים שלך:</font></strong></font></td>
+</tr>
+<tr>
+<td colspan="2"><font face="Arial">* אימייל ראשון:</font></td>
+<td>
+<font face="Arial">
+<input size="30" name="friendmail1" maxlength="45"> </font>
+</td>
+</tr>
+<tr>
+<td colspan="2"><font face="Arial">אימייל שני:</font></td>
+<td>
+<font face="Arial">
+<input size="30" name="friendmail2" maxlength="45"> </font>
+</td>
+</tr>
+<tr>
+<td colspan="2"><font face="Arial">אימייל שלישי:</font></td>
+<td>
+<font face="Arial">
+<input size="30" name="friendmail3" maxlength="45"> </font>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+
+<font size="-2" face="Arial">בהודעה שתשלח יופיעו השם וכתובת האימייל שלך. </font>
+
+</td>
+</tr>
+<tr align="center">
+  <td><small>(נגד ספאם)</small> כמה זה</td>
+  <td><font color="#FF0000">
+    <script type="text/javascript">DrawBotBoot()</script>
+  </font>
+  </td>
+  <td><font face="Arial">
+<input class="button" onClick="validate();" type="button" value="לחץ כאן לשליחה"> 
+</font></td>
+</tr>
+</table>
+
+</form>
+</td>
+</tr> 
+
+</table>
+</body>
+</html>

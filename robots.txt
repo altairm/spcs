@@ -1,0 +1,6 @@
+User-agent: * 
+Disallow: /addOn/
+Disallow: /cpan/
+Disallow: /data/
+Disallow: /modules/
+Disallow: /positions/

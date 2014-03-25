@@ -1,0 +1,20 @@
+.control a
+{
+	background:#666;
+	padding:0 3px;
+	color:#999999;
+	text-transform:uppercase;
+	text-decoration:none;
+	margin-left:3px;
+	
+}
+
+.control a.active
+{
+  background:#333;
+}
+
+.control a span
+{
+  /*visibility:hidden;*/
+}
